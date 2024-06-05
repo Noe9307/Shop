@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Título */
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Formulario de contacto */
+        form {
+            margin-top: 30px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"], /* Estilos para el campo de teléfono */
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+            outline: none;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+            display: block;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Estilos para la barra desplegable */
+        .select-wrapper {
+            position: relative;
+        }
+
+        .select-wrapper select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: calc(100% - 20px);
+            padding-right: 20px;
+            background-color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        .select-arrow {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            pointer-events: none;
+            color: #666;
+        }
+
+        /* Estilos para el encargado de servicio al cliente */
+        .service-representative {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .service-representative img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .service-representative p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Estilos para la imagen del encargado de servicio al cliente */
+        .service-image {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .service-image img {
+            width: 150px;
+            border-radius: 50%;
+        }
+
+        .service-description {
+            font-size: 16px;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        /* Estilos para el campo de teléfono */
+        .telephone-input {
+            width: calc(100% - 20px);
+            padding-right: 20px;
+            background-color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        /* Estilos para el botón "Volver al Inicio" */
+        .back-to-home {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            display: block;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 20px;
+            cursor: pointer; /* Hace que el botón sea interactivo */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contactanos</h1>
+        <form>
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="correo" placeholder="Correo electrónico" required>
+            <!-- Campo de teléfono -->
+            <input type="tel" name="telefono" placeholder="Teléfono" class="telephone-input" required>
+            <div class="select-wrapper">
+                <select name="motivo" required>
+                    <option value="" disabled selected>Selecciona un motivo</option>
+                    <option value="No aparece mi compra">No aparece mi compra</option>
+                    <option value="No llego mi paquete">No llego mi paquete</option>
+                    <option value="Problema técnico">Problema técnico</option>
+                    <option value="Devoluciones y reembolsos">Devoluciones y reembolsos</option>
+                    <option value="Administrar y cancelar compras">Administrar y cancelar compras</option>
+                    <option value="Administrar cuenta">Administrar cuenta</option>
+                    <option value="Otros">Otros</option>
+                </select>
+                <div class="select-arrow">&#9660;</div>
+            </div>
+            <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+            <input type="submit" value="Enviar mensaje">
+        </form>
+        <!-- Botón "Volver al Inicio" -->
+      <button class="back-to-home" onclick="window.location.href='/';">Volver al Inicio</button>
+    </div>
+
+    <!-- Apartado de servicio al cliente -->
+    <div class="service-representative">
+        <div class="service-image">
+            <img src="images\uzzi.jpeg" alt="Foto del encargado de servicio al cliente">
+        </div>
+        <h2>Encargado de Servicio al Cliente</h2>
+        <p class="service-description">
+            Uzziel Sánchez<br>
+            Hablen princesas, señoras, bandidas, bellakas, hombres no respondo.
+        </p>
+    </div>
+</body>
+</html>

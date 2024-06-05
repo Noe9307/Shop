@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Online Store | Homepage</title>
+		<link rel="stylesheet" th:href="@{css/bootstrap.min.css}">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" th:href="@{style/main.css}">	
+	</head>
+	<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+
+		<header>
+			<nav class="main-nav">
+				<div class="brand text-main">
+					<a href="#">
+						<h1>Art-Technica</h1>
+					</a>
+				</div>
+				<div class="links">
+					<ul>
+						<li><a href="#">Home</a></li>
+					    <li><a th:href="@{/hardw}">Hardware</a></li>
+					    <li><a th:href="@{/videogms}">Videojuegos</a></li>
+					    <li><a href="#">Sobre nosotros</a></li>
+					    <li><a th:href="@{/contactanos}">Contáctanos</a></li>
+					    <li><a href="#">
+							<img src="icons\search.svg" alt="search">
+						</a>
+						<input type="search" class="search">.
+						</li>
+					</ul>
+				</div>
+				<div class="icon-for-user">
+					<a th:href="@{/login}">
+						<img src="icons/person.svg" alt="person">
+					</a>
+					<a class="cart-icon" th:href="@{/cart}">
+						<img src="icons/shop-bag.svg" alt="cart">
+						<span class="badge badge-warning badge-cart">2</span>
+					</a>
+				</div>
+				<div class="menu">
+					<img src="icons/menu.svg" alt="menu">
+				</div>
+			</nav>
+		</header>
+		
+		<!-- /header -->
+	
+		<main>
+			
+			<!-- BANNER -->
+			<section class="banner">
+				<div class="container">
+					<div class="row justify-content-center align-items-center pad-tab" data-aos="fade-up">
+						<div class="banner-text col-sm-12 col-md-6">
+							<p class="text-second">Art Shop</p>
+							<h1 class="text-main secondary-col">Hasta 40% de descuentos en productos gamer</h1>
+							<p class="text-second">Vive las grandes experiencias del medio, sin restricción</p>
+							<a href="#" class="btn-rounded text-main">Convénceme</a>
+						</div>
+						<div class="banner-image col-sm-12 col-md-6 d-none d-sm-block">
+							<img src="images/image.png" alt="image-banner" class="img-fluid">
+						</div>
+					</div>
+				</div>
+			</section>
+	
+			<!-- NEW ARRIVALS -->
+    
+			<section class="new-arrivals">
+				<div class="container">
+					<div class="text-arrivals row align-items-center">
+						<div class="title col-7 col-sm-6 col-md-9 text-left">
+							<h3 class="text-main"><span>Productos</span> destacados</h3>
+						</div>
+						<div class="text-show-all col-5 col-sm-6 col-md-3 text-right text-main pr-md-0">
+							<a th:href="@{/productos}">
+								<p>Muéstrame todo <img src="icons/arrow.png" alt="icon-arrow"></p>
+							</a>
+						</div>
+					</div>
+		
+					<div class="arrival-images row justify-content-center align-items-center text-center">
+						<div class="arrival-image col-12 mb-4 mb-sm-0 mb-md-4 mb-lg-0 col-sm-12 col-md-6 col-lg-4" data-aos="fade-up">
+							<a href="images/pict1.jpg">
+								<img src="images/pict1.jpg" alt="pict1" class="img-fluid">
+							</a>
+						</div>
+						<div class="arrival-image col-12 mb-4 mb-sm-0 mb-md-4 mb-lg-0 col-sm-12 col-md-6 col-lg-4" data-aos="fade-up">
+							<a href="images/pict2.jpg">
+								<img src="images/pict2.jpg" alt="pict2" class="img-fluid">
+							</a>
+						</div>
+						<div class="arrival-image col-12 mb-4 mb-sm-0 mb-md-4 mb-lg-0 col-sm-12 col-md-6 col-lg-4" data-aos="fade-up">
+							<a href="images/pict3.jpg">
+								<img src="images/pict3.jpg" alt="pict3" class="img-fluid">
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+	
+			<!--PRODUCTS-->
+
+			<section class="products-section">
+				<div class="container">
+					<div class="text-products row align-items-center">
+						<div class="title-product col-7 col-sm-6 col-md-9">
+							<h2 class="text-main"> ¿Ofertas? ¡Aquí las tienes, muchachón!</h2>
+						</div>
+						<div class="text-show-all text-right text-main col-5 col-sm-6 col-md-3 pr-md-0">
+							<a href="#">
+								<p> UwU<img src="icons/arrow-2.png" alt="icon-arrow"></p>
+							</a>
+						</div>
+					</div>
+		
+					<div class="products row justify-content-center">
+						<div class="product col-12 col-sm-12 col-md-6 col-lg-3 mb-md-4 md-lg-0" data-aos="fade-up">
+							<div class="bg-white">
+								<div class="product-image text-center">
+									<img src="images/prod-1.png" alt="product" class="img-fluid">
+								</div>
+								<div class="desc-product">
+									<a href="#">
+										<p class="text-second">RTX 4090 Asus ROG 12GB GDDR6
+										</p>
+										<p class="text-second"><s>$ 47,900.00</s><br>$ 28,560.00</p>
+										<button class="add-to-cart-btn" data-name="RTX 4090 Asus ROG 12GB GDDR6" data-price="28560.00">Agregar al carrito</button>
+									</a>
+								</div>
+							</div>
+						</div>
+		
+						<div class="product col-12 col-sm-12 col-md-6 col-lg-3 mb-md-4 md-lg-0" data-aos="fade-up"
+						data-aos-delay="100">
+							<div class="bg-white">
+								<div class="product-image text-center">
+									<img src="images/prod-4.png" alt="product" class="img-fluid">
+								</div>
+								<div class="desc-product">
+									<a href="#">
+										<p class="text-second">Juego: Persona 3 Reload PS5</p>
+										<p class="text-second"><s>$ 1800.00</s><br>$ 1,080.00</p>
+										<button class="add-to-cart-btn" data-name="Nombre del Producto" data-price="Precio del Producto">Agregar al Carrito</button>
+									</a>
+								</div>
+							</div>
+						</div>
+		
+						<div class="product col-12 col-sm-12 col-md-6 col-lg-3 mb-md-4 md-lg-0" data-aos="fade-up"
+						data-aos-delay="200">
+							<div class="bg-white">
+								<div class="product-image text-center">
+									<img src="images/prod-3.png" alt="product" class="img-fluid">
+								</div>
+								<div class="desc-product">
+									<a href="#">
+										<p class="text-second">Teclado Pseudo-mecánico Razer Ornata</p>
+										<p class="text-second"><s>$ 2,300.00</s><br>$ 1,380.00</p>
+										<button class="add-to-cart-btn" data-name="Nombre del Producto" data-price="Precio del Producto">Agregar al Carrito</button>
+									</a>
+								</a>
+							</div>
+							</div>
+						</div>
+		
+						<div class="product col-12 col-sm-12 col-md-6 col-lg-3 mb-md-4 md-lg-0" data-aos="fade-up"
+						data-aos-delay="300">
+							<div class="bg-white">
+								<div class="product-image text-center">
+									<img src="images/prod-2.png" alt="product" class="img-fluid">
+								</div>
+								<div class="desc-product">
+									<a href="#">
+										<p class="text-second">Mouse gamer Logitech G502</p>
+										<p class="text-second"><s>$ 3,700.00</s><br> $ 2,200.00</p>
+										<button class="add-to-cart-btn" data-name="Nombre del Producto" data-price="Precio del Producto">Agregar al Carrito</button>
+									</a>
+								</div>
+							</div>
+						</div>
+		
+						<div class="product col-12 col-sm-12 col-md-6 col-lg-3 mb-md-4 md-lg-0" data-aos="fade-up"
+						data-aos-delay="100">
+							<div class="bg-white">
+								<div class="product-image text-center">
+									<img src="images/prod-5.png" alt="product" class="img-fluid">
+								</div>
+								<div class="desc-product">
+									<a href="#">
+										<p class="text-second">Juego: The Legend of Zelda: Breath of the Wild Nintendo Switch</p>
+										<p class="text-second"><s>$ 1800.00</s><br>$ 1,080.00</p>
+										<button class="add-to-cart-btn" data-name="Nombre del Producto" data-price="Precio del Producto">Agregar al Carrito</button>
+									</a>
+								</div>
+							</div>
+						</div>
+		
+						<div class="product col-12 col-sm-12 col-md-6 col-lg-3 mb-md-4 md-lg-0" data-aos="fade-up"
+						data-aos-delay="100">
+							<div class="bg-white">
+								<div class="product-image text-center">
+									<img src="images/prod-6.png" alt="product" class="img-fluid">
+								</div>
+								<div class="desc-product">
+									<a href="#">
+										<p class="text-second">Juego: Nier Automata Nintendo Switch</p>
+										<p class="text-second"><s>$ 1800.00</s><br>$ 1,080.00</p>
+										<button class="add-to-cart-btn" data-name="Nombre del Producto" data-price="Precio del Producto">Agregar al Carrito</button>
+									</a>
+								</div>
+							</div>
+						</div>
+		
+						<div class="product col-12 col-sm-12 col-md-6 col-lg-3 mb-md-4 md-lg-0" data-aos="fade-up"
+						data-aos-delay="100">
+							<div class="bg-white">
+								<div class="product-image text-center">
+									<img src="images/prod-7.png" alt="product" class="img-fluid">
+								</div>
+								<div class="desc-product">
+									<a href="#">
+										<p class="text-second">Juego: Devil May Cry: HD Collection PS5</p>
+										<p class="text-second"><s>$ 1800.00</s><br>$ 1,080.00</p>
+										<button class="add-to-cart-btn" data-name="Nombre del Producto" data-price="Precio del Producto">Agregar al Carrito</button>
+									</a>
+								</div>
+							</div>
+						</div>
+		
+						<div class="product col-12 col-sm-12 col-md-6 col-lg-3 mb-md-4 md-lg-0" data-aos="fade-up"
+						data-aos-delay="100">
+							<div class="bg-white">
+								<div class="product-image text-center">
+									<img src="images/prod-8.png" alt="product" class="img-fluid">
+								</div>
+								<div class="desc-product">
+									<a href="#">
+										<p class="text-second">Vinilo: Super Mario Galaxy: Soundtrack by Koji Köndo</p>
+										<p class="text-second"><s>$ 1800.00</s><br>$ 1,080.00</p>
+										<button class="add-to-cart-btn" data-name="Nombre del Producto" data-price="Precio del Producto">Agregar al Carrito</button>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		
+		</main>
+		
+		<!--main-->
+	
+		<footer>
+			<div class="container">
+				<div class="footer-content row mb-4">
+					<div class="footer-brand col-12 col-sm-12 col-md-3 col-lg-3">
+						<div>
+							<h1 class="text-main">Art-Technica</h1>
+						</div>
+					</div>
+					<div class="footer-item col-12 col-sm-12 col-md-4">
+						<div>
+							<div class="footer-item-content">
+								<h3 class="text-main">Negocios</h3>
+								<p><a href="#">ArtTech@gmail.com</a></p>
+								<p><a href="#">021-1234-5678</a></p>
+								<p><a href="#">Suiza, Berna</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				<div class="copyright-section border-top">
+					<div class="row">
+						<div class="col-12">
+							<div class="copyright-content text-center mt-4">
+								<p class="text-second">Art-Technica Online Store Copyright &copy; 2024 All Rights Reserved</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="library/bootstrap/js/bootstrap.min.js"></script> -->
+		<script th:src="@{script/index.js}"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+	
+	</body>
+</html>
